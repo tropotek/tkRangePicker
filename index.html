@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta content="">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+  <link rel="stylesheet" href="jquery.rangepicker.css" />
+  <script src="jquery.rangepicker.js"></script>
+
+  <!-- Page Implementation -->
+  <script src="main.js"></script>
+
+
+</head>
+<body>
+  
+  <h1>Range Picker</h1>
+  <p>Setup a datepicker to allow the user to select a date range, also have the ability to load unavailable dates from the server.</p>
+  <p>TODO: We need the ability to select a start/end time. or halfDays flag.</p>
+  <p>&nbsp;</p>
+  
+  
+  
+  <h2>Bootstrap Datepicker Version</h2>
+  <p>
+    <b>TODO:</b> We should implement this into: 
+    <a href="https://uxsolutions.github.io/bootstrap-datepicker/?markup=input&format=&weekStart=&startDate=&endDate=&startView=0&minViewMode=0&maxViewMode=4&todayBtn=false&clearBtn=false&language=en&orientation=auto&multidate=&multidateSeparator=&keyboardNavigation=on&forceParse=on#sandbox">bootstrap-datepicker</a> 
+    or 
+    <a href="https://eonasdan.github.io/bootstrap-datetimepicker/#linked-pickers">Bootstrap 3</a>.
+  </p>
+  <p>&nbsp;</p>
+  
+  
+  <h2>jquery-ui Version</h2>
+  <h3>Example standalone</h3>
+  <div class="rangepicker-wrap">
+    <div class="rangepicker-single"></div>
+  </div>
+
+  <h3>Example single input field (AJAX)</h3>
+  <div class="rangepicker-wrap">
+    <div class="rangepicker-input"></div>
+    <p>
+      <input type="text" name="dates" id="fid-dates" placeholder="Checkin - Checkout"/>
+    </p>
+  </div>
+
+  <h3>Example dual input fields</h3>
+  <div class="rangepicker-wrap">
+    <div class="rangepicker-dualInput"></div>
+    <p>
+      <input type="text" name="from" id="fid-from" placeholder="Checkin"/>
+      <input type="text" name="to" id="fid-to" placeholder="Checkout"/>
+    </p>
+  </div>
+
+
+  <h3>Example dual input fields with date selectors</h3>
+  <div class="rangepicker-wrap">
+    <div class="rangepicker-dualInput2"></div>
+    <p>
+      <input type="text" name="from2" id="fid-from2" placeholder="Checkin"/>
+      <input type="text" name="to2" id="fid-to2" placeholder="Checkout"/>
+    </p>
+  </div>
+
+
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+
+
+
+
+<!--
+    /**
+     * TODO
+     * Check out this jquery datepicker extension: http://bseth99.github.io/projects/jquery-ui/4-jquery-ui-datepicker-range.html
+     *   And this accompanying article: http://www.benknowscode.com/2012/11/selecting-ranges-jquery-ui-datepicker.html
+     *   Also http://wp-hostel.com/articles/jquery-datepicker-tweaks.php
+     *
+     * I think this would work a lot easier if we just use javascript and AJAX to submit the dates into the DB
+     * this will also make it easier on the user to manage. Have the required form fields in the page already so when
+     * they submit it is only a single click, not multiple windows.
+     *
+     * TODO:
+     *  - background images for calendar days with half day for check-in check-out
+     *  - how do disable selecting a day cell
+     *  - fix half day bug in existing where it does not know when a new booking is in the direct next day.
+     *
+     */
+-->
+
+</body>
+</html>

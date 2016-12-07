@@ -1,0 +1,43 @@
+
+.date-range-selected > .ui-state-active,
+.date-range-selected > .ui-state-default {
+  background: none;
+  background-color: lightsteelblue;
+}
+.date-range-selected.start > .ui-state-active,
+.date-range-selected.start > .ui-state-default
+{
+  background: linear-gradient(lightsteelblue 50%, #C4E3FF 50%) !important;
+}
+.date-range-selected.end > .ui-state-active,
+.date-range-selected.end > .ui-state-default
+{
+  background: linear-gradient(#C4E3FF 50%, lightsteelblue 50%) !important;
+}
+
+
+
+
+
+a.rangepicker-start,
+.rangepicker td.start a {
+  background: linear-gradient(#EFEFEF 50%, #C4E3FF 50%) !important;
+}
+.rangepicker td.full {
+  opacity: 1;
+}
+a.rangepicker-full,
+.rangepicker td.full a,
+.rangepicker td.full span {
+  background: linear-gradient(#C4E3FF 50%, #C4E3FF 50%) !important;
+  color: #CCC;
+}
+a.rangepicker-end,
+.rangepicker td.end a {
+  background: linear-gradient(#C4E3FF 50%, #EFEFEF 50%) !important;
+}
+
+
+
+
+

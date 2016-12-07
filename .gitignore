@@ -1,0 +1,9 @@
+
+.idea
+.directory
+*.swp
+*.bak
+*.iml
+/_notes
+
+
